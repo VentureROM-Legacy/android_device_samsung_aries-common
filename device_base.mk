@@ -210,4 +210,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/updater.sh:updater.sh
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/10app2sd:system/etc/init.d/10app2sd
+
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
