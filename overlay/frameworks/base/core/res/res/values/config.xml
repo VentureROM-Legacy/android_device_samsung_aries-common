@@ -196,6 +196,6 @@
          through AudioManager.playSoundEffect() when no volume is specified. -->
     <integer name="config_soundEffectVolumeDb">-12</integer>
 
-    <!-- Configuration to allow Pie on non-navbar devices --> </resources>
+    <!-- Configuration to allow Pie on non-navbar devices -->
     <bool name="config_allowPieWithoutNavbar">true</bool>
 </resources>
