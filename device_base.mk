@@ -146,9 +146,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.opengles.version=131072
 
-# Force Navkeys to show, neded for PIE WIP
+# For applications to determine if they should turn off specific memory-intensive
+# features that work poorly on low-memory devices.
 PRODUCT_PROPERTY_OVERRIDES += \
-    qemu.hw.mainkeys=0
+    ro.config.low_ram=true
 
 # Support for Browser's saved page feature. This allows
 # for pages saved on previous versions of the OS to be
