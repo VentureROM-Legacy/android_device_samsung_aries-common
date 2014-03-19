@@ -195,4 +195,7 @@
     <!-- The attenuation in dB applied to the sound effects played
          through AudioManager.playSoundEffect() when no volume is specified. -->
     <integer name="config_soundEffectVolumeDb">-12</integer>
+
+    <!-- Configuration to allow Pie on non-navbar devices --> </resources>
+    <bool name="config_allowPieWithoutNavbar">true</bool>
 </resources>
