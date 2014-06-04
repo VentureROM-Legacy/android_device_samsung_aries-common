@@ -21,7 +21,6 @@
      for different hardware and product builds. -->
 <resources>
     <!-- Pie controls dimensions -->
-    <dimen name="pie_trigger_height">13dp</dimen>
     <dimen name="pie_clock_size">50dp</dimen>
     <dimen name="pie_am_pm_size">12dp</dimen>   
 </resources>
