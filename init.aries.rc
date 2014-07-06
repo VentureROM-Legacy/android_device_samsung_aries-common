@@ -49,7 +49,10 @@ on fs
     mount yaffs2 mtd@radio /radio
     mount yaffs2 mtd@datadata /datadata
     mount_all fstab.aries
-    swapon_all /fstab.aries
+
+    write /sys/block/zram0/comp_algorithm lzo
+    write /sys/block/zram0/max_comp_streams 3
+    swapon_all fstab.aries
 
     chown radio radio /radio/modem.bin
     exec /system/bin/restorecon -r /radio
